@@ -1,0 +1,160 @@
+{
+    "key": "A",
+    "instances": {
+        "drums": {
+            "class": "KidsDrums",
+            "params": {}
+        },
+        "bass": {
+            "class": "KidsBass",
+            "params": {}
+        },
+        "melody": {
+            "class": "KidsMelody",
+            "params": {}
+        },
+        "other_melody": {
+            "class": "KidsOtherMelody",
+            "params": {}
+        },
+        "pad": {
+            "class": "KidsPad",
+            "params": {}
+        },
+        "solo": {
+            "class": "KidsSolo",
+            "params": {}
+        }
+    },
+    "sequences": {
+        "intro": ["drums", "None", "melody"],
+        "intro2": ["drums", "bass", "melody", "other_melody", "pad"],
+        "verse": ["drums", "bass", "None", "other_melody", "None"],
+        "chorus": ["drums", "bass", "melody", "other_melody", "pad"], 
+        "verse2": ["drums", "bass"],
+        "chorus2": ["drums", "bass", "melody", "other_melody", "pad"],
+        "bridge": ["drums", "bass", "None", "None", "None", "solo"],
+        "bridge2": ["drums", "bass"],
+        "chorus3": ["drums", "bass", "melody", "other_melody", "pad"]
+    },
+    "progressions": [
+      {
+          "name": "intro",
+          "time_signature": [4,4],
+          "chords": {
+              "repetitions": 2,
+              "sequence": [
+                  [10, "minor", 4],
+                  [6, "major", 4],
+                  [1, "major", 4],
+                  [8, "major", 4]
+              ]
+          }
+      }, 
+      {
+        "name": "intro2",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 4,
+            "sequence": [
+                [10, "minor", 4],
+                [6, "major", 4],
+                [1, "major", 4],
+                [8, "major", 4, 1]
+            ]
+        }
+    },
+    {
+        "name": "verse",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 4,
+            "sequence": [
+                [10, "minor", 4],
+                [6, "major", 4],
+                [1, "major", 4],
+                [8, "major", 4, 1]
+            ]
+        }
+    },
+    {
+        "name": "chorus",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 4,
+            "sequence": [
+                [10, "minor", 4],
+                [6, "major", 4],
+                [1, "major", 4],
+                [8, "major", 4, 1]
+            ]
+        }
+    },
+    {
+        "name": "verse2",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 4,
+            "sequence": [
+                [10, "minor", 4],
+                [6, "major", 4],
+                [1, "major", 4],
+                [8, "major", 4, 1]
+            ]
+        }
+    },
+    {
+        "name": "chorus2",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 4,
+            "sequence": [
+                [10, "minor", 4],
+                [6, "major", 4],
+                [1, "major", 4],
+                [8, "major", 4, 1]
+            ]
+        }
+    },
+    {
+        "name": "bridge",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 1,
+            "sequence": [
+                [6, "major", 4],
+                [8, "major", 4],
+                [10, "minor", 4],
+                [8, "major", 4, 1],
+                [1, "major", 4],
+                [3, "minor", 4],
+                [6, "major", 4],
+                [8, "major", 4]
+            ]
+        }
+    },
+    {
+        "name": "bridge2",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 8,
+            "sequence": [
+                [1, "major", 4]
+            ]
+        }
+    },
+    {
+        "name": "chorus3",
+        "time_signature": [4,4],
+        "chords": {
+            "repetitions": 8,
+            "sequence": [
+                [10, "minor", 4],
+                [6, "major", 4],
+                [1, "major", 4],
+                [8, "major", 4, 1]
+            ]
+        }
+    }
+    ]
+}
