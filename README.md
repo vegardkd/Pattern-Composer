@@ -5,7 +5,8 @@ This program enables the creation of music simulations based on user-defined cod
 # Quickstart Guide
 
 ## Requirements
-This application requires Python 3.10. If you don't have Python installed, please visit the official Python website to download and install the latest version.
+This application requires Python 3.10. If you don't have Python installed, please visit the 
+[official Python website](https://www.python.org/) to download and install the latest version.
 
 ## Getting Started
 The application comes with a sample multitrack arrangement of the song "Kids" by MGMT. This example should help you understand the various features of the application.
@@ -24,15 +25,15 @@ Press Enter to execute the command. The program will take a few seconds to compl
 # Digital Audio Workstation (DAW) Compatibility and Recommendations
 The program generates a MIDI file, which can be imported into a Digital Audio Workstation (DAW) of your choice. The MIDI files have been tested with GarageBand and Ableton Live, and have shown successful results.
 
-How to Integrate MIDI files with your DAW
+## How to Integrate MIDI files with your DAW
 Note that the program does not directly integrate with DAWs. To use the MIDI file with your DAW, follow the steps below:
 
-## Run the program to generate a MIDI file.
+### Run the program to generate a MIDI file.
 Locate the generated MIDI file (in the program's output folder).
 Drag and drop, or import the MIDI file into your DAW.
 Unfortunately, most DAWs don't support automatic reloading of MIDI files. Each time the program generates a new MIDI file, you'll have to manually import it into your DAW.
 
-## Tips for Ableton Live Users
+### Tips for Ableton Live Users
 For Ableton Live users, here's a quick tip to streamline your workflow:
 
 Click on 'Add Folder' in the left-side menu of Ableton Live.
@@ -42,10 +43,26 @@ Note on File Names
 
 Currently, the program adds a date and timestamp to the name of each generated MIDI file. I'll add an option for overwriting it (same name) if this is something you want as a feature. This could be beneficial for those who figure out a way to have their DAW automatically reload MIDI files. Updates regarding this feature will be provided as they become available.
 
-## Notes
-composer.py is the main program.
-kids.json is a file containing the arrangement for the song. You can inspect this file to understand how an arrangement is defined. It's a good starting point if you wish to create your own arrangements.
-Given the complexity of the song, it may take up to ten seconds for the simulation to complete and generate the MIDI file.
+
+# Practical Information
+## Internet Connection
+This program requires an active internet connection to function correctly.
+
+## Feedback and Suggestions
+I highly appreciate your feedback and suggestions. If you encounter any issues or have ideas for improvements, feel free to leave a comment in the issues section of the repository. I'm eager to hear your thoughts and experiences, and I will consider every suggestion. I have a low threshold for implementing changes that will enhance the functionality and user experience of the program.
+
+[Go to Issues](https://github.com/keychange/Pattern-Composer/issues)
+
+## Stay Updated
+Want to stay informed about the program's progress? If you're interested in receiving updates about new features or bug fixes, consider subscribing to my email list. Just follow the link below to sign up:
+
+[Subscribe to our Email List](https://docs.google.com/forms/d/1-xlsBSfBegOmXaXVDwhEFMPwyxnEi7PEey8UV2GpWr4/viewform?edit_requested=true#responses)
+
+## Contact
+
+If you have any questions, feedback, or suggestions, please don't hesitate to get in touch. You can reach me at the following email address:
+
+key.change.inquiry@gmail.com
 
 # Documentation
 
@@ -72,7 +89,7 @@ class KidsDrums(Pattern):
         self.bridge_toms_pause_switch = True
         self.standard_parts = [
             'intro', 
-            'intro2', 
+            'intro2',
             'verse', 
             'chorus', 
             'chorus2', 
