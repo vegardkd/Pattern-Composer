@@ -378,9 +378,9 @@ The Chord class in the program can be used to create scales as well as chords, g
 For instance, the Chord class is used to create the pentatonic scale in the KidsMelody pattern class.
 
 ```python
-notes = Chord(1, 'pentatonic').get_notes(octave=3)
+notes = Chord(1, 'major_pentatonic').get_notes(octave=3)
 ```
-In this case, the Chord object is initiated with arguments 1 and 'pentatonic', where 1 represents the first step in the key of the song and 'pentatonic' is the name of the scale.
+In this case, the Chord object is initiated with arguments 1 and 'major_pentatonic', where 1 represents the first step in the key of the song and 'major_pentatonic' is the name of the scale.
 
 ## Getting Notes from a Chord or Scale
 The Chord class itself does not hold explicit information about the concrete notes of the scale or chord. However, you can obtain a list of Note objects representing the actual notes of the scale or chord by calling the `.get_notes()` method on the Chord object.
@@ -388,7 +388,7 @@ The Chord class itself does not hold explicit information about the concrete not
 The `.get_notes()` method takes an argument specifying the octave for the notes. For example, in the KidsMelody pattern class, the pentatonic scale is obtained in the third octave:
 
 ```python
-notes = Chord(1, 'pentatonic').get_notes(octave=3)
+notes = Chord(1, 'major_pentatonic').get_notes(octave=3)
 ````
 
 
